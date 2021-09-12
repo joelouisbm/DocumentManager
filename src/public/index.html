@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.2/dist/css/uikit.min.css" />
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.2/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.2/dist/js/uikit-icons.min.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <div class="nav_bc"
+            uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
+            <div class="uk-container">
+                <nav class="uk-navbar-container" uk-navbar="dropbar: true;" style="position: relative; z-index: 980;">
+                    <div class="uk-navbar-left">
+                        <ul class="uk-navbar-nav">
+                            <li class="uk-active"><a class="logo" href="index.html">Logo</a></li>
+                        </ul>
+                    </div>
+                    <div class="uk-navbar-right">
+
+                        <div>
+                            <a class="uk-navbar-toggle" uk-search-icon href="#"></a>
+                            <div class="uk-drop" uk-drop="mode: click; pos: left-center; offset: 0">
+                                <form class="uk-search uk-search-navbar uk-width-1-1">
+                                    <input class="uk-search-input" type="search"
+                                        placeholder="not available" autofocus>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="uk-container uk-padding">
+            <form id="form-document">
+                <fieldset class="uk-fieldset">
+                    <legend class="uk-legend">Register Document</legend>
+                    <div class="uk-margin">
+                        <input id="file-id" name="id" class="uk-input" hidden />
+                    </div>
+                    <div class="uk-margin">
+                        <textarea id="keywords" name="keyworks" class="uk-textarea" rows="2"
+                            placeholder="keyworks" required></textarea>
+                    </div>
+                    <div class="uk-margin">
+                        <p id="name_document" class="uk-text-middle"></p>
+                        <div class="js-upload uk-placeholder uk-text-center">
+                            <span uk-icon="icon: cloud-upload"></span>
+                            <span class="uk-text-middle">Attach binaries by dropping them here or</span>
+                            <div uk-form-custom>
+                                <input id="input-files" type="file" name="files">
+                                <span class="uk-link">selecting one</span>
+                            </div>
+                        </div>
+                        <progress id="js-progressbar" class="uk-progress" value="0" max="100" hidden></progress>
+                    </div>
+                </fieldset>
+                <button type="submit" id="btn_acept" class="uk-button uk-button-default">Save</button>
+            </form>
+            <div class="uk-margin-top">
+                <legend class="uk-legend">Saved documents</legend>
+                <table class="uk-table uk-table-striped">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Document Name</th>
+                            <th>Document Type</th>
+                            <th>Size</th>
+                            <th>Storage Date</th>
+                            <th>KeyWords</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody"></tbody>
+                </table>
+            </div>
+            <div class="uk-flex">
+                <div class="uk-width-1-2">
+                    <!--a class="uk-button uk-button-default" href="#modal-center" uk-toggle>Open</a-->
+                </div>
+                <div class="uk-width-1-2 uk-align-right"><a href="#" uk-totop uk-scroll></a></div>
+            </div>
+
+            <div id="modal-center" class="uk-flex-top" uk-modal>
+                <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+                    <button class="uk-modal-close-default" type="button" uk-close></button>
+                </div>
+            </div>
+
+        </div>
+        <footer>
+            <div class="uk-container bt1 ft">
+                footer
+            </div>
+        </footer>
+    </div>
+    <script type="module" src="js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+.nav_bc {
+    background: linear-gradient(to left, #2c2877e0, #2c2877);
+}
+
+.uk-navbar-container:not(.uk-navbar-transparent) {
+    background: #f8f8f800 !important;
+}
+
+.uk-navbar-nav>li>a {
+    color: #a3a5fc !important;
+}
+
+.uk-table {
+    border: 1px solid #Eee !important;
+}
+
+.uk-link {
+    cursor: pointer !important;
+}
+
+.uk-navbar-toggle {
+    color: #fff !important;
+}
+
+.uk-search-input {
+    background: #4444a3 !important;
+    border-radius: 50px !important;
+    padding: 10px 10px 13px 10px !important;
+    font-size: medium !important;
+    color: #a3a5fc !important;
+}
+
+footer {
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;    
+    width: 100%;
+    height: 40px;
+    color: #000;
+    text-align: center;
+    z-index: 3;
+    color: #999;
+    vertical-align: initial;
+    line-height: normal;
+    font-size: .675rem;
+    padding: 12px;
+}
+
+.uk-button-default {
+    background: #dde2ff !important;
+    color: #2c2877 !important;
+    border: none !important;
+    border-radius: 5px !important;
+    text-transform: capitalize !important;
+    font-weight: bold !important;    
+}
+
+.uk-button-default:hover {
+    background: #afbaf8 !important;    
+}
+
+.uk-align-right {
+    text-align: right;
+}
+
+.bt1{
+    border-top: 1px solid #eee;
+}
+
+.uk-textarea, .uk-input, .js-upload{
+    border-radius: 5px !important;
+}
+
+.logo{
+    font-weight: 700 !important;
+}
+
+.ft{
+    color: #696363;
+    font-weight: bold;
+    padding: 10px;
+}
